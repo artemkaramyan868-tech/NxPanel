@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NXPanel — Modern Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand"><span class="brand-mark">NX</span><span>NXPanel</span></div>
+      <nav class="nav">
+        <a class="nav-item active" href="#dashboard" data-page="dashboard">🏠 <span>Dashboard</span></a>
+        <a class="nav-item" href="#projects" data-page="projects">🌐 <span>Պրոջեքթ</span></a>
+        <a class="nav-item" href="#create" data-page="create">+<span>Ստեղծել Նոր</span></a>
+        <a class="nav-item" href="#activity" data-page="activity">⌚ <span>Գործունեություն</span></a>
+        <a class="nav-item" href="#settings" data-page="settings">⚙️ <span>Կարգավորումններ</span></a>
+      </nav>
+      <div class="sidebar-button">
+        <button class="nav-item logout" id="logoutBtn">🛫 <span>Ելք</span></button>
+      </div>
+    </aside>
+
+     <main class="main">
+       <header class="topbar">
+         <button class="icon-btn menu-btn" id="menuBtn">•••</button>
+         <div class="search"><span>🔍</span><input id="searchinput" placeholder="Գտնել Պռոջեկտններ..."></div>
+         <div class="top-actions">
+           <button class="icon-btn" id="themeBtn" title="Theme">⚡</button>
+           <button class="avatar" id="profileBtn">N</button>
+         </div>
+       </header>
+
+      <section class="content" id="pageContent"></section>
+     </main>
+  </div>
+
+  <div class="modal hidden" id="projectModal">
+    <div class="modal-card">
+      <button class="modal-close" id="closeModal">❌</button>
+      <div class="eyebrow">ՆՈՐ ՊՌՈՋԵՔԹ</div>
+      <h2>Ստեղծել Նոր Պռոջեքթ</h2>
+      <p class="muted">Ավելացնել նոր նախագիծ dashboard-ում։</p>
+      <input id="projectName" class="field" placeholder="Պռոջեքթի Անունը">
+      <input id="projectDesc" class="field" placeholder="Short Description">
+      <button class="primary full" id="saveProject">Ստեղծել Պռոջեքթ</button>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
+      
